@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, Star, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedHeadline from "@/components/website_components/animated-headline";
 import TypeOnce from "@/components/website_components/type-once";
@@ -8,7 +8,9 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import MenuPeek from "@/components/website_components/menu-peek";
 import Testimonials from "@/components/website_components/testimonials";
 import LocationMap from "@/components/website_components/location-map";
+import { Input } from "@/components/ui/input";
 import StickyOrderBar from "@/components/website_components/sticky-order-bar";
+import Image from "next/image";
 
 const heroImage = PlaceHolderImages.find(img => img.id === 'house-specials');
 
