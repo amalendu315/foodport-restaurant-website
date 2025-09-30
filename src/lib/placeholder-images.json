@@ -1,0 +1,178 @@
+{
+  "placeholderImages": [
+    {
+      "id": "veg-soup",
+      "description": "Vegetable Soup",
+      "imageUrl": "https://images.unsplash.com/photo-1745173257252-7ebd34f48e23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb3VwJTIwdmVnZXRhYmxlfGVufDB8fHx8MTc1OTIyNDEzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "soup vegetable"
+    },
+    {
+      "id": "non-veg-soup",
+      "description": "Chicken Soup",
+      "imageUrl": "https://images.unsplash.com/photo-1569058242276-0bc3e078cf86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb3VwJTIwY2hpY2tlbnxlbnwwfHx8fDE3NTkyNDUzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "soup chicken"
+    },
+    {
+      "id": "momos",
+      "description": "Steamed Momos",
+      "imageUrl": "https://images.unsplash.com/photo-1667474667223-bf26ff0db2a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkdW1wbGluZ3MlMjBtb21vc3xlbnwwfHx8fDE3NTkyNDUzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dumplings momos"
+    },
+    {
+      "id": "chinese-veg-starters",
+      "description": "Chilli Paneer",
+      "imageUrl": "https://images.unsplash.com/photo-1479750538326-d7a4e460010c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGlsbGklMjBwYW5lZXJ8ZW58MHx8fHwxNzU5MjQ1MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chilli paneer"
+    },
+    {
+      "id": "chinese-veg-noodles",
+      "description": "Hakka Noodles",
+      "imageUrl": "https://images.unsplash.com/photo-1679279726940-be5ce80c632c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxub29kbGVzJTIwc3RpcmZyeXxlbnwwfHx8fDE3NTkyNDUzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "noodles stirfry"
+    },
+    {
+      "id": "chinese-non-veg",
+      "description": "Chilli Chicken",
+      "imageUrl": "https://images.unsplash.com/photo-1569058242567-93de6f36f8e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGlsbGklMjBjaGlja2VufGVufDB8fHx8MTc1OTI0NTMwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chilli chicken"
+    },
+    {
+      "id": "biryani",
+      "description": "Chicken Biryani",
+      "imageUrl": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiaXJ5YW5pJTIwcmljZXxlbnwwfHx8fDE3NTkyNDUzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "biryani rice"
+    },
+    {
+      "id": "rolls",
+      "description": "Kati Roll",
+      "imageUrl": "https://images.unsplash.com/photo-1707322540591-51712eb524fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d3JhcCUyMHJvbGx8ZW58MHx8fHwxNzU5MjQ1MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wrap roll"
+    },
+    {
+      "id": "kababs",
+      "description": "Seekh Kabab",
+      "imageUrl": "https://images.unsplash.com/photo-1669906824315-a2740f96a35f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxrZWJhYiUyMGdyaWxsfGVufDB8fHx8MTc1OTI0NTMwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kebab grill"
+    },
+    {
+      "id": "indian-snacks",
+      "description": "Samosa",
+      "imageUrl": "https://images.unsplash.com/photo-1627670381055-487000952cb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzYW1vc2ElMjBzbmFja3xlbnwwfHx8fDE3NTkyNDUzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "samosa snack"
+    },
+    {
+      "id": "dal",
+      "description": "Dal Makhani",
+      "imageUrl": "https://images.unsplash.com/photo-1642821373475-cfd6c7301b18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsZW50aWxzJTIwY3Vycnl8ZW58MHx8fHwxNzU5MjQ1MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lentils curry"
+    },
+    {
+      "id": "veg-indian",
+      "description": "Paneer Butter Masala",
+      "imageUrl": "https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYW5lZXIlMjBjdXJyeXxlbnwwfHx8fDE3NTkxNTIyNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paneer curry"
+    },
+    {
+      "id": "non-veg-indian",
+      "description": "Butter Chicken",
+      "imageUrl": "https://images.unsplash.com/photo-1627366422957-3efa9c6df0fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlja2VuJTIwY3Vycnl8ZW58MHx8fHwxNzU5MTU2OTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken curry"
+    },
+    {
+      "id": "rice",
+      "description": "Jeera Rice",
+      "imageUrl": "https://images.unsplash.com/photo-1733414717515-d997dafb7341?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cmljZSUyMGN1bWlufGVufDB8fHx8MTc1OTI0NTMwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rice cumin"
+    },
+    {
+      "id": "roti-paratha",
+      "description": "Tandoori Roti",
+      "imageUrl": "https://images.unsplash.com/photo-1691862469586-9c7c183b27b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YnJlYWQlMjBmbGF0YnJlYWR8ZW58MHx8fHwxNzU5MjQ1MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bread flatbread"
+    },
+    {
+      "id": "house-specials",
+      "description": "Special Thali",
+      "imageUrl": "https://images.unsplash.com/photo-1711633648895-f5df0336ff55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0aGFsaSUyMG1lYWx8ZW58MHx8fHwxNzU5MjQ1MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "thali meal"
+    },
+    {
+      "id": "dish-1",
+      "description": "Tomato Soup",
+      "imageUrl": "https://images.unsplash.com/photo-1659480150417-25f9f0d5ca2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0b21hdG8lMjBzb3VwfGVufDB8fHx8MTc1OTIyNTA2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tomato soup"
+    },
+    {
+      "id": "dish-2",
+      "description": "Manchow Soup",
+      "imageUrl": "https://images.unsplash.com/photo-1535923054316-5f75572def8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW5jaG93JTIwc291cHxlbnwwfHx8fDE3NTkyNDA3Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "manchow soup"
+    },
+    {
+      "id": "dish-3",
+      "description": "Chicken Manchow Soup",
+      "imageUrl": "https://images.unsplash.com/photo-1469307517101-0b99d8fb0c33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlja2VuJTIwc291cHxlbnwwfHx8fDE3NTkxOTU1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken soup"
+    },
+    {
+      "id": "dish-4",
+      "description": "Veg Momos",
+      "imageUrl": "https://images.unsplash.com/photo-1657939728877-df03de19f9fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx2ZWclMjBkdW1wbGluZ3N8ZW58MHx8fHwxNzU5MjQ1MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "veg dumplings"
+    },
+    {
+      "id": "dish-5",
+      "description": "Paneer Momos",
+      "imageUrl": "https://images.unsplash.com/photo-1630992929003-f7c1743d11da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwYW5lZXIlMjBkdW1wbGluZ3N8ZW58MHx8fHwxNzU5MjQ1MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paneer dumplings"
+    },
+    {
+      "id": "dish-6",
+      "description": "Chicken Biryani",
+      "imageUrl": "https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGlja2VuJTIwYmlyeWFuaXxlbnwwfHx8fDE3NTkxNTg4ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken biryani"
+    },
+    {
+      "id": "dish-7",
+      "description": "Mutton Biryani",
+      "imageUrl": "https://images.unsplash.com/photo-1691171047403-0abfd83f0ea7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bXV0dG9uJTIwYmlyeWFuaXxlbnwwfHx8fDE3NTkxNTE3NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mutton biryani"
+    },
+    {
+      "id": "dish-8",
+      "description": "Chicken Roll",
+      "imageUrl": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwd3JhcHxlbnwwfHx8fDE3NTkxODQxMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken wrap"
+    },
+    {
+      "id": "dish-9",
+      "description": "Paneer Roll",
+      "imageUrl": "https://images.unsplash.com/photo-1537123365119-2150f2f84144?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYW5lZXIlMjB3cmFwfGVufDB8fHx8MTc1OTI0NTMwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paneer wrap"
+    },
+    {
+      "id": "dish-10",
+      "description": "Dal Makhani",
+      "imageUrl": "https://images.unsplash.com/photo-1728542575492-47e02eb3305c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYWwlMjBjdXJyeXxlbnwwfHx8fDE3NTkyNDUzMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dal curry"
+    },
+    {
+      "id": "dish-11",
+      "description": "Paneer Butter Masala",
+      "imageUrl": "https://images.unsplash.com/photo-1586981114766-708f09a71e20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwYW5lZXIlMjBjdXJyeXxlbnwwfHx8fDE3NTkxNTIyNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paneer curry"
+    },
+    {
+      "id": "dish-12",
+      "description": "Butter Chicken",
+      "imageUrl": "https://images.unsplash.com/photo-1707448829764-9474458021ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxidXR0ZXIlMjBjaGlja2VufGVufDB8fHx8MTc1OTI0MTk0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "butter chicken"
+    },
+    {
+      "id": "dish-13",
+      "description": "Kadai Chicken",
+      "imageUrl": "https://images.unsplash.com/photo-1597890698474-8de5af43b1aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxrYWRhaSUyMGNoaWNrZW58ZW58MHx8fHwxNzU5MjQ1MzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kadai chicken"
+    }
+  ]
+}

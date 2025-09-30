@@ -1,0 +1,21 @@
+{
+  "name": "FoodPort PWA",
+  "short_name": "FoodPort",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF4EB",
+  "theme_color": "#FF8C00",
+  "description": "Chinese, Mughlai & Indian delight. Order direct and save!",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
