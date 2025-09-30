@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Header from "@/components/website_components/header";
 import Footer from "@/components/website_components/footer";
 import StickyContactDock from "@/components/website_components/sticky-contact-dock";
@@ -50,6 +51,7 @@ export default function RootLayout({
         </div>
         <StickyContactDock />
         <Toaster />
+        <SpeedInsights />
         <script
             id="loading-overlay-script"
             dangerouslySetInnerHTML={{
