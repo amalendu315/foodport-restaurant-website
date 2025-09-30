@@ -8,7 +8,7 @@ import StickyContactDock from "@/components/website_components/sticky-contact-do
 import LoadingOverlay from "@/components/website_components/loading-overlay";
 
 export const metadata: Metadata = {
-    title: "FoodPort PWA",
+    title: "FoodPort Restaurant",
     description: "Chinese, Mughlai & Indian delight. Order direct and save!",
 };
 
