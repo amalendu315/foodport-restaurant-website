@@ -3,11 +3,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import {
-    Sheet,
-    SheetContent,
-    SheetTrigger,
-} from "@/components/ui/sheet";
 import { Menu, Search, ShoppingCart, User } from "lucide-react";
 import Logo from "./logo";
 import { usePathname } from "next/navigation";
@@ -38,34 +33,9 @@ export default function Header() {
                     <Logo />
                 </div>
 
+                {/* Mobile Logo */}
                 <div className="flex items-center md:hidden">
-                    <Sheet>
-                        <SheetTrigger asChild>
-                            <Button variant="ghost" size="icon">
-                                <Menu className="h-6 w-6" />
-                                <span className="sr-only">Toggle Menu</span>
-                            </Button>
-                        </SheetTrigger>
-                        <SheetContent side="left" className="w-[300px]">
-                            <div className="mt-8 flex flex-col gap-4">
-                                <Logo />
-                                <nav className="flex flex-col gap-4">
-                                    {navLinks.map((link) => (
-                                        <Link
-                                            key={link.href}
-                                            href={link.href}
-                                            className={cn(
-                                                "text-lg font-semibold",
-                                                pathname === link.href ? "text-primary" : "text-muted-foreground"
-                                            )}
-                                        >
-                                            {link.label}
-                                        </Link>
-                                    ))}
-                                </nav>
-                            </div>
-                        </SheetContent>
-                    </Sheet>
+                    <Logo />
                 </div>
 
                 <div className="ml-auto flex-1 md:ml-0 md:flex-grow-0 md:flex-shrink-0 md:basis-auto">
@@ -94,34 +64,36 @@ export default function Header() {
                 </nav>
 
                 <div className="ml-4 flex items-center gap-1">
-                    <TooltipProvider>
-                        <Tooltip>
-                            <TooltipTrigger asChild>
-                                <Button variant="ghost" size="icon" asChild>
-                                    <Link href="/cart">
-                                        <ShoppingCart className="h-5 w-5" />
-                                        <span className="sr-only">Cart</span>
-                                    </Link>
-                                </Button>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                                <p>View Cart</p>
-                            </TooltipContent>
-                        </Tooltip>
-                        <Tooltip>
-                            <TooltipTrigger asChild>
-                                <Button variant="ghost" size="icon" asChild>
-                                    <Link href="/login">
-                                        <User className="h-5 w-5" />
-                                        <span className="sr-only">Login</span>
-                                    </Link>
-                                </Button>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                                <p>Account</p>
-                            </TooltipContent>
-                        </Tooltip>
-                    </TooltipProvider>
+                    <div className="hidden md:flex">
+                        <TooltipProvider>
+                            <Tooltip>
+                                <TooltipTrigger asChild>
+                                    <Button variant="ghost" size="icon" asChild>
+                                        <Link href="/cart">
+                                            <ShoppingCart className="h-5 w-5" />
+                                            <span className="sr-only">Cart</span>
+                                        </Link>
+                                    </Button>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>View Cart</p>
+                                </TooltipContent>
+                            </Tooltip>
+                            <Tooltip>
+                                <TooltipTrigger asChild>
+                                    <Button variant="ghost" size="icon" asChild>
+                                        <Link href="/login">
+                                            <User className="h-5 w-5" />
+                                            <span className="sr-only">Login</span>
+                                        </Link>
+                                    </Button>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>Account</p>
+                                </TooltipContent>
+                            </Tooltip>
+                        </TooltipProvider>
+                    </div>
                     <ThemeToggle />
                 </div>
             </div>

@@ -13,7 +13,6 @@ export default function StickyContactDock() {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        // Use a timeout to delay the appearance, making it less intrusive on load
         const timer = setTimeout(() => {
             setIsVisible(true);
         }, 1000);
@@ -25,7 +24,7 @@ export default function StickyContactDock() {
 
     const handleVibrate = () => {
         if (typeof window !== 'undefined' && 'vibrate' in navigator) {
-            navigator.vibrate(50); // Vibrate for 50ms
+            navigator.vibrate(50);
         }
     };
 
@@ -37,8 +36,7 @@ export default function StickyContactDock() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 50 }}
                     transition={{ type: "spring", stiffness: 200, damping: 25 }}
-                    className="fixed bottom-4 right-4 z-50 flex flex-col items-center gap-3 sm:flex-row sm:bottom-6 sm:right-6 md:bottom-8 md:right-8"
-                    style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
+                    className="fixed bottom-20 right-4 z-50 flex flex-col items-center gap-3 md:bottom-8 md:right-8"
                 >
                     <TooltipProvider>
                         <Tooltip>

@@ -6,6 +6,7 @@ import Header from "@/components/website_components/header";
 import Footer from "@/components/website_components/footer";
 import StickyContactDock from "@/components/website_components/sticky-contact-dock";
 import LoadingOverlay from "@/components/website_components/loading-overlay";
+import BottomAppBar from "@/components/website_components/bottom-app-bar";
 
 export const metadata: Metadata = {
     title: "FoodPort Restaurant",
@@ -50,6 +51,7 @@ export default function RootLayout({
             <Footer />
         </div>
         <StickyContactDock />
+        <BottomAppBar />
         <Toaster />
         <SpeedInsights />
         <script
