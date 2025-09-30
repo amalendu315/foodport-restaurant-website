@@ -43,17 +43,16 @@ export default function RootLayout({
                 }}
             />
         </head>
-        <body className="font-body antialiased grainy-bg bg-background text-foreground">
+        <body className="font-body antialiased">
         <LoadingOverlay />
         <div className="flex min-h-screen flex-col">
             <Header />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 pb-16 md:pb-0">{children}</main>
             <Footer />
         </div>
         <StickyContactDock />
         <BottomAppBar />
         <Toaster />
-        <SpeedInsights />
         <script
             id="loading-overlay-script"
             dangerouslySetInnerHTML={{
@@ -80,7 +79,6 @@ export default function RootLayout({
                 
                 document.body.style.overflow = 'hidden';
                 
-                // Fallback to readyState
                 document.addEventListener('readystatechange', () => checkReadyState());
                 checkReadyState();
 

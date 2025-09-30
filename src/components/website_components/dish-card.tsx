@@ -31,7 +31,7 @@ export default function DishCard({ dish }: DishCardProps) {
     };
 
     return (
-        <Card className="flex flex-col overflow-hidden">
+        <Card className="flex flex-col overflow-hidden transition-shadow duration-300 hover:shadow-xl">
             <CardHeader className="p-0">
                 <div className="relative aspect-video">
                     <Image

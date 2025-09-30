@@ -16,33 +16,41 @@ export default function Home() {
     return (
         <>
             <div className="relative overflow-hidden">
-                <section className="container mx-auto grid min-h-[calc(100vh-4rem)] grid-cols-1 items-center gap-8 px-4 py-16 md:grid-cols-2 md:py-24">
+                <section className="container mx-auto grid min-h-[calc(100vh-4rem)] items-center gap-8 px-4 py-8 md:grid-cols-2 md:py-16">
                     <div className="flex flex-col items-center text-center md:items-start md:text-left">
                         <AnimatedHeadline
                             as="h1"
-                            className="font-headline text-5xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl"
+                            className="font-headline text-4xl font-bold tracking-tight text-foreground md:text-6xl lg:text-7xl"
                             text="FoodPort Restaurant"
                         />
                         <TypeOnce
                             as="p"
-                            className="mt-4 max-w-lg text-lg text-muted-foreground md:text-xl"
+                            className="mt-4 max-w-lg text-base text-muted-foreground md:text-xl"
                             text="Chinese, Mughlai & Indian delight. Order direct and save!"
                         />
-                        <p className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
-                            Near Giri Namkeen, Ghorabandha Main Road, Telco, Jamshedpur
-                        </p>
-                        <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                            <Button asChild size="lg" className="font-bold shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-shadow">
+
+                        <div className="mt-6 w-full max-w-sm md:hidden">
+                            <div className="relative">
+                                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                                <Input placeholder="Search 150+ dishes..." className="w-full pl-9" />
+                            </div>
+                        </div>
+
+                        <div className="mt-6 flex w-full flex-col gap-4 sm:flex-row md:w-auto">
+                            <Button asChild size="lg" className="w-full font-bold shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-shadow md:w-auto">
                                 <Link href="/menu">
                                     View Menu <ArrowRight />
                                 </Link>
                             </Button>
-                            <Button asChild size="lg" variant="outline" className="font-bold">
+                            <Button asChild size="lg" variant="outline" className="w-full font-bold md:w-auto">
                                 <Link href="/track/test-order-123">
                                     Track Order
                                 </Link>
                             </Button>
                         </div>
+                        <p className="mt-6 flex items-center gap-2 text-sm text-muted-foreground md:mt-4">
+                            Near Giri Namkeen, Ghorabandha Main Road, Telco, Jamshedpur
+                        </p>
                     </div>
                     <div className="relative hidden h-full min-h-[400px] w-full md:block">
                         {heroImage && (
@@ -77,7 +85,30 @@ export default function Home() {
                     <h2 className="font-headline text-4xl font-bold">From Our Kitchen</h2>
                     <p className="mt-2 text-lg text-muted-foreground">A glimpse of our most-loved dishes</p>
                 </div>
-                <MenuPeek />
+                <div className="md:hidden">
+                    {heroImage && (
+                        <Link href={`/menu?category=${heroImage.id}`}>
+                            <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+                                <Image
+                                    src={heroImage.imageUrl}
+                                    alt={heroImage.description}
+                                    fill
+                                    priority
+                                    className="object-cover"
+                                    sizes="100vw"
+                                    data-ai-hint={heroImage.imageHint}
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                <h3 className="absolute bottom-4 left-4 font-headline text-2xl font-bold text-white">
+                                    {heroImage.description}
+                                </h3>
+                            </div>
+                        </Link>
+                    )}
+                </div>
+                <div className='hidden md:block'>
+                    <MenuPeek />
+                </div>
                 <div className="mt-12 text-center">
                     <Button asChild variant="link" className="text-lg">
                         <Link href="/menu">View Full Menu <ArrowRight /></Link>
