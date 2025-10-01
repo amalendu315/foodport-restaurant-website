@@ -43,7 +43,7 @@ export default function RootLayout({
                 }}
             />
         </head>
-        <body className="font-body antialiased">
+        <body className="font-body antialiased bg-background text-foreground grainy-bg">
         <LoadingOverlay />
         <div className="flex min-h-screen flex-col">
             <Header />
